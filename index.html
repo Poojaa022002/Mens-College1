@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government College of Advanced Studies</title>
+    <link rel="stylesheet" href="style/land.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <!-- Popup Modal -->
+    <div class="popup-modal" id="announcementPopup">
+        <div class="popup-content animate__animated animate__zoomIn">
+            <span class="close-btn">&times;</span>
+            <div class="popup-header">
+                <h3><i class="fas fa-bullhorn"></i> Important Announcement</h3>
+            </div>
+            <div class="popup-body">
+                <p>Admissions for the academic year 2024-25 are now open!</p>
+                <p>Last date to apply: <strong>June 30, 2024</strong></p>
+                <button class="popup-action-btn">Apply Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container header-flex">
+
+            <!-- Left Logo -->
+            <div class="header-left">
+                <img src="images/college.png" alt="GCAS Logo" class="logo-img">
+            </div>
+
+            <!-- Center Navbar -->
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#notice-board">Notices</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="nav-btn">Apply Now</a></li>
+                </ul>
+            </nav>
+
+            <!-- Right Logo -->
+            <div class="header-right">
+                <img src="images/tamilnadu.png" alt="Govt Logo" class="logo-img">
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Scrolling News Ticker -->
+    <div class="news-ticker">
+        <!-- <div class="ticker-label">
+            <i class="fas fa-bullhorn"></i>
+            <span>Latest Updates:</span>
+        </div> -->
+        <div class="ticker-content">
+            <ul>
+                <li><span class="ticker-date">[15 May]</span> Last date for semester fee submission extended to May 20
+                </li>
+                <li><span class="ticker-date">[14 May]</span> University examination results declared - Check student
+                    portal</li>
+                <li><span class="ticker-date">[13 May]</span> Summer internship applications open till May 25</li>
+                <li><span class="ticker-date">[12 May]</span> Campus placement drive by TechCorp on May 25</li>
+                <li><span class="ticker-date">[10 May]</span> Library will remain open 24/7 during examination period
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/biulding1.jpg');">
+                <div class="slide-content">
+                    <h1>அரசினர் கலைக் கல்லூரி (தன்னாட்சி)</h1>
+                    <h1 class="animate__animated animate__fadeInDown">Government Arts College (Autonomous)</h1>
+                    <p class="animate__animated animate__fadeInUp">Re-accredited (III Cycle) with B++ Grade by NAAC</p>
+                    <p class="animate__animated animate__fadeInUp">Affiliated to Bharathidasan University</p>
+                    <p class="animate__animated animate__fadeInUp">Kumbakonam - 612 002, Tamil Nadu</p>
+                    <!-- <div class="hero-btns animate__animated animate__fadeInUp">
+                        <a href="#courses" class="btn-primary">Explore Courses</a>
+                        <a href="#about" class="btn-secondary">Learn More</a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="slide"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/building2.jpg');">
+                <div class="slide-content">
+                    <h1>அனைத்து வசதிகளுடன் கூடிய சிறந்த உட்கட்டமைப்பு</h1>
+                    <h2>State-of-the-Art Facilities</h2>
+                    <p>Modern labs, extensive library, and sports complex for all-round development</p>
+                    <!-- <div class="hero-btns">
+                        <a href="#facilities" class="btn-primary">View Facilities</a>
+                        <a href="#contact" class="btn-secondary">Campus Tour</a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="slide"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/sports.jpg');">
+                <div class="slide-content">
+                    <h1>வேலைவாய்ப்பு மற்றும் தனித்திறன் மேம்பாடு</h1>
+                    <h2>Placements & Career Opportunities</h2>
+                    <p>90% placement rate with top recruiters from leading industries</p>
+                    <!-- <div class="hero-btns">
+                        <a href="#placements" class="btn-primary">Placement Stats</a>
+                        <a href="#contact" class="btn-secondary">Contact Placement Cell</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>About Our College</h2>
+                <p>Established in 1965, we are a leading government institution offering quality education</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <h3>Welcome to GCAS</h3>
+                    <p>Government College of Advanced Studies is a premier institution dedicated to providing quality
+                        higher education to students from all walks of life. Our campus spans over 50 acres with
+                        state-of-the-art facilities.</p>
+                    <p>We offer a wide range of undergraduate and postgraduate programs in Arts, Science, and Commerce
+                        streams, along with professional courses.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>5000+</h4>
+                            <p>Students</p>
+                        </div>
+                        <div class="stat">
+                            <h4>250+</h4>
+                            <p>Faculty</p>
+                        </div>
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>Courses</p>
+                        </div>
+                        <div class="stat">
+                            <h4>90%</h4>
+                            <p>Placement Rate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate-on-scroll">
+                    <div class="image-frame">
+                        <img src="images/principal.jpg" alt="College Campus">
+                        <div class="image-overlay">
+                            <p>Established 1965</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notice Board Section -->
+    <section class="section notice-section" id="notice-board">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2><i class="fas fa-clipboard-list"></i> Notice Board</h2>
+                <p>Important announcements, circulars, and updates from the college administration</p>
+            </div>
+
+            <div class="notice-container">
+                <div class="notice-sidebar">
+                    <div class="notice-categories">
+                        <h3><i class="fas fa-filter"></i> Filter by Category</h3>
+                        <ul>
+                            <li class="active" data-category="all">All Notices</li>
+                            <li data-category="academic">Academic</li>
+                            <li data-category="examination">Examination</li>
+                            <li data-category="placement">Placement</li>
+                            <li data-category="event">Events</li>
+                            <li data-category="holiday">Holidays</li>
+                        </ul>
+                    </div>
+
+                    <div class="important-dates">
+                        <h3><i class="fas fa-calendar-alt"></i> Important Dates</h3>
+                        <ul>
+                            <li>
+                                <span class="date">May 20, 2024</span>
+                                <span>Last date for fee submission</span>
+                            </li>
+                            <li>
+                                <span class="date">May 25, 2024</span>
+                                <span>TechCorp placement drive</span>
+                            </li>
+                            <li>
+                                <span class="date">June 1, 2024</span>
+                                <span>Summer vacation begins</span>
+                            </li>
+                            <li>
+                                <span class="date">June 15, 2024</span>
+                                <span>Annual science fair</span>
+                            </li>
+                            <li>
+                                <span class="date">June 30, 2024</span>
+                                <span>Admissions close</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="notice-board">
+                    <div class="notice-header">
+                        <h3><i class="fas fa-bell"></i> Latest Notices</h3>
+                        <div class="notice-count">Showing 6 notices</div>
+                    </div>
+
+                    <div class="notices-list">
+                        <div class="notice-item academic" data-category="academic">
+                            <div class="notice-date">
+                                <span class="day">15</span>
+                                <span class="month">May</span>
+                                <span class="year">2024</span>
+                            </div>
+                            <div class="notice-content">
+                                <h4>Extension of Fee Submission Date</h4>
+                                <p>The last date for submission of semester fees has been extended to May 20, 2024.
+                                    Students are requested to pay their fees online through the student portal or at the
+                                    college accounts office.</p>
+                                <div class="notice-meta">
+                                    <span class="category academic">Academic</span>
+                                    <span class="department">Accounts Department</span>
+                                    <a href="#" class="download-link"><i class="fas fa-download"></i> Download
+                                        Circular</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notice-item examination" data-category="examination">
+                            <div class="notice-date">
+                                <span class="day">14</span>
+                                <span class="month">May</span>
+                                <span class="year">2024</span>
+                            </div>
+                            <div class="notice-content">
+                                <h4>University Examination Results Declared</h4>
+                                <p>Results for the semester examinations held in April 2024 have been declared. Students
+                                    can check their results on the university website or through the student portal
+                                    using their login credentials.</p>
+                                <div class="notice-meta">
+                                    <span class="category examination">Examination</span>
+                                    <span class="department">Examination Cell</span>
+                                    <a href="#" class="download-link"><i class="fas fa-external-link-alt"></i> Check
+                                        Results</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notice-item placement" data-category="placement">
+                            <div class="notice-date">
+                                <span class="day">12</span>
+                                <span class="month">May</span>
+                                <span class="year">2024</span>
+                            </div>
+                            <div class="notice-content">
+                                <h4>Campus Placement Drive by TechCorp</h4>
+                                <p>TechCorp will be conducting a campus placement drive on May 25, 2024. Eligible final
+                                    year students from Computer Science, IT, and Electronics departments can register
+                                    through the placement portal by May 22.</p>
+                                <div class="notice-meta">
+                                    <span class="category placement">Placement</span>
+                                    <span class="department">Placement Cell</span>
+                                    <a href="#" class="download-link"><i class="fas fa-download"></i> Download
+                                        Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notice-item event" data-category="event">
+                            <div class="notice-date">
+                                <span class="day">10</span>
+                                <span class="month">May</span>
+                                <span class="year">2024</span>
+                            </div>
+                            <div class="notice-content">
+                                <h4>Annual Science Fair 2024</h4>
+                                <p>The Department of Science is organizing the Annual Science Fair on June 15, 2024.
+                                    Students can participate in various competitions and exhibitions. Registration forms
+                                    are available at the science department office.</p>
+                                <div class="notice-meta">
+                                    <span class="category event">Event</span>
+                                    <span class="department">Science Department</span>
+                                    <a href="#" class="download-link"><i class="fas fa-download"></i> Registration
+                                        Form</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notice-item holiday" data-category="holiday">
+                            <div class="notice-date">
+                                <span class="day">8</span>
+                                <span class="month">May</span>
+                                <span class="year">2024</span>
+                            </div>
+                            <div class="notice-content">
+                                <h4>Summer Vacation Schedule</h4>
+                                <p>The college will remain closed for summer vacation from June 1 to June 30, 2024.
+                                    Administrative offices will function with limited staff. The new academic session
+                                    will commence on July 1, 2024.</p>
+                                <div class="notice-meta">
+                                    <span class="category holiday">Holiday</span>
+                                    <span class="department">Administration</span>
+                                    <a href="#" class="download-link"><i class="fas fa-download"></i> Holiday List</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notice-item academic" data-category="academic">
+                            <div class="notice-date">
+                                <span class="day">5</span>
+                                <span class="month">May</span>
+                                <span class="year">2024</span>
+                            </div>
+                            <div class="notice-content">
+                                <h4>Library Extended Hours During Exams</h4>
+                                <p>In view of the upcoming examinations, the central library will remain open 24/7 from
+                                    May 15 to June 10, 2024. Students are requested to make use of the extended library
+                                    hours for their exam preparation.</p>
+                                <div class="notice-meta">
+                                    <span class="category academic">Academic</span>
+                                    <span class="department">Library</span>
+                                    <a href="#" class="download-link"><i class="fas fa-download"></i> Library
+                                        Schedule</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notice-archive">
+                        <a href="#" class="archive-link"><i class="fas fa-archive"></i> View Archive Notices</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="section courses-section" id="courses">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Our Courses</h2>
+                <p>Explore our wide range of undergraduate and postgraduate programs</p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-card animate-on-scroll">
+                    <div class="course-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Science</h3>
+                    <p>B.Sc. in Physics, Chemistry, Mathematics, Computer Science, Biotechnology</p>
+                    <a href="#" class="course-link">View Programs <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Arts & Humanities</h3>
+                    <p>B.A. in English, History, Political Science, Economics, Sociology</p>
+                    <a href="#" class="course-link">View Programs <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Commerce</h3>
+                    <p>B.Com, BBA, M.Com with specialization in Finance, Accounting, Marketing</p>
+                    <a href="#" class="course-link">View Programs <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Professional Courses</h3>
+                    <p>BCA, B.Sc. IT, MCA, and other vocational and skill development programs</p>
+                    <a href="#" class="course-link">View Programs <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="section facilities-section" id="facilities">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Our Facilities</h2>
+                <p>State-of-the-art infrastructure to support learning and development</p>
+            </div>
+
+            <div class="facilities-grid">
+                <div class="facility-card animate-on-scroll">
+                    <div class="facility-img">
+                        <img src="images/library.jpg" alt="Library">
+                        <div class="facility-overlay">
+                            <a href="#" class="view-btn">View Details</a>
+                        </div>
+                    </div>
+                    <h3>Central Library</h3>
+                    <p>Over 1,00,000 books, journals, and digital resources with 24/7 online access</p>
+                </div>
+
+                <div class="facility-card animate-on-scroll">
+                    <div class="facility-img">
+                        <img src="images/lab.jpg" alt="Laboratory">
+                        <div class="facility-overlay">
+                            <a href="#" class="view-btn">View Details</a>
+                        </div>
+                    </div>
+                    <h3>Advanced Laboratories</h3>
+                    <p>Well-equipped labs for Physics, Chemistry, Biology, and Computer Science</p>
+                </div>
+
+                <div class="facility-card animate-on-scroll">
+                    <div class="facility-img">
+                        <img src="images/sports.jpg" alt="Sports Complex">
+                        <div class="facility-overlay">
+                            <a href="#" class="view-btn">View Details</a>
+                        </div>
+                    </div>
+                    <h3>Sports Complex</h3>
+                    <p>Indoor and outdoor sports facilities including gym, swimming pool, and courts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="section events-section" id="events">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Upcoming Events</h2>
+                <p>Stay updated with our latest campus activities and events</p>
+            </div>
+
+            <div class="events-timeline">
+                <div class="event-item animate-on-scroll">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">June</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Annual Science Fair</h3>
+                        <p>Showcasing innovative projects by students from Science departments</p>
+                        <div class="event-info">
+                            <span><i class="far fa-clock"></i> 10:00 AM - 4:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Main Auditorium</span>
+                        </div>
+                    </div>
+                    <button class="event-register">Register Now</button>
+                </div>
+
+                <div class="event-item animate-on-scroll">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">June</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Placement Drive</h3>
+                        <p>Recruitment session by top companies for final year students</p>
+                        <div class="event-info">
+                            <span><i class="far fa-clock"></i> 9:00 AM - 5:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Placement Cell</span>
+                        </div>
+                    </div>
+                    <button class="event-register">Register Now</button>
+                </div>
+
+                <div class="event-item animate-on-scroll">
+                    <div class="event-date">
+                        <span class="day">30</span>
+                        <span class="month">June</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Cultural Fest</h3>
+                        <p>Annual cultural festival with music, dance, drama and art competitions</p>
+                        <div class="event-info">
+                            <span><i class="far fa-clock"></i> 11:00 AM - 8:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> College Ground</span>
+                        </div>
+                    </div>
+                    <button class="event-register">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for admissions, inquiries, or campus visits</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>Government Arts College (Autonomous)<br>
+                                Kumbakonam - 612 002<br>India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>0435 2442149 (Admissions)<br>
+                                +91-435 2442977 (Administration)</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>gacakum1854@gmail.com<br>
+                                https://gacakum.ac.in</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Office Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 1:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form animate-on-scroll">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-university"></i>
+                        <div>
+                            <h3>GCAS</h3>
+                            <p>Government Arts College (Autonomous)</p>
+                        </div>
+                    </div>
+                    <p class="footer-about">A premier government institution dedicated to academic excellence and
+                        holistic development since 1965.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#notice-board">Notice Board</a></li>
+                        <li><a href="#events">Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="#">Admission Procedure</a></li>
+                        <li><a href="#">Examination Portal</a></li>
+                        <li><a href="#">Student Login</a></li>
+                        <li><a href="#">Faculty Login</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Government Arts College (Autonomous) Kumbakonam. All Rights Reserved.</p>
+                <p>Developed by Qvesys-info-tech</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/land.js"></script>
+</body>
+
+</html>
